@@ -26,3 +26,5 @@ hot-module-replacement@0.4.0  # Update code in development without reloading the
 blaze-hot               # Update files using Blaze's API with HMR
 
 ostrio:flow-router-extra
+kadira:flow-router
+kadira:blaze-layout

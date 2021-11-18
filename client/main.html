@@ -21,6 +21,13 @@
       {{> slideshow}}
     {{/each}}
   </ul>
+
+  <ul>
+    {{#each images}}
+      {{> imgcards}}
+    {{/each}}
+  </ul>
+
   
 </body>
 
@@ -50,4 +57,14 @@
 
 <template name="slideshow">
   <ul> <img class="img-li" src="{{image}}" alt="{{name}}"></ul> 
+</template>
+
+<template name="imgcards">
+  <div class="card">
+   <ul> <img src="{{image}}" alt="Avatar" style="width: 25%"> </ul>
+    <div class="container">
+      <h4><b>Name</b></h4>
+      <p>Breed</p>
+    </div>
+  </div>
 </template>

@@ -3,8 +3,9 @@
 </head>
 
 <body>
+  {{>header}} <br>
   <h1>Welcome to Meteor!</h1>
-
+  
   {{> hello}}
   {{> info}}
 </body>
@@ -21,5 +22,14 @@
     <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
     <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
     <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+  </ul>
+</template>
+
+<template name="header">
+  <ul id="header-ul">
+    <li class="navli"><a class="nav-a" href="default.asp">Home</a></li>
+    <li class="navli"><a class="nav-a" href="news.asp">News</a></li>
+    <li class="navli"><a class="nav-a" href="contact.asp">Contact</a></li>
+    <li class="navli"><a class="nav-a" href="about.asp">About</a></li>
   </ul>
 </template>

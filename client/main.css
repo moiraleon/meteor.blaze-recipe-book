@@ -27,3 +27,8 @@ body {
 .nav-a:hover {
   background-color: #111;
 }
+
+.img-li{
+  float: left;
+  display: inline;
+}

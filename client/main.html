@@ -8,6 +8,20 @@
   
   {{> hello}}
   {{> info}}
+
+
+  <ul>
+    {{#each tasks}}
+      {{> task}}
+    {{/each}}
+  </ul>
+
+  <ul>
+    {{#each images}}
+      {{> slideshow}}
+    {{/each}}
+  </ul>
+  
 </body>
 
 <template name="hello">
@@ -17,12 +31,7 @@
 
 <template name="info">
   <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+
 </template>
 
 <template name="header">
@@ -35,6 +44,10 @@
 </template>
 
  
-<template name="slideshow">
+<template name="task">
+  <li>{{text}}</li>
+</template>
 
+<template name="slideshow">
+  <ul> <img class="img-li" src="{{image}}" alt="{{name}}"></ul> 
 </template>

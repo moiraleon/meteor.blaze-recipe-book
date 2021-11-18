@@ -1,12 +1,11 @@
-<template name="news-layout">
-<body>
+<template name="news_layout">
+
  <h1>News Page</h1>
 
- <main>
+ {{> yield}}
      {{>Template.dynamic template=news}}
- </main>
 
-</body>
+
 </template>
 
 <template name="test">

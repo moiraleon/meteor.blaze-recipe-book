@@ -4,40 +4,48 @@
 
 <body>
   {{>header}} <br>
-  <h1>Welcome to Meteor!</h1>
+  <h1>Welcome to Orem Pet Rescue!</h1>
   
   {{> hello}}
-  {{> info}}
+  {{> header2}}
 
 
-  <ul>
+  <!-- <ul>
     {{#each tasks}}
       {{> task}}
     {{/each}}
-  </ul>
+  </ul> -->
 
-  <ul>
+  <!-- <ul>
     {{#each images}}
       {{> slideshow}}
     {{/each}}
-  </ul>
+  </ul> -->
 
   <ul>
     {{#each images}}
+    <!-- {{#each breeds}} -->
+    <!-- {{#each names}} -->
       {{> imgcards}}
+    <!-- {{/each}} -->
+     <!-- {{/each}} -->
     {{/each}}
   </ul>
 
-  
-</body>
+  <!-- <ul>
+    {{#each names}}
+      {{> imgcards}}
+    {{/each}}
+  </ul> -->
 
+</body>
 <template name="hello">
-  <button>Click Me</button>
+  <button>Find the Best Pet for You!</button>
   <p>You've pressed the button {{counter}} times.</p>
 </template>
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
+<template name="header2">
+  <h2>Meet our Pets!</h2>
 
 </template>
 
@@ -61,10 +69,10 @@
 
 <template name="imgcards">
   <div class="card">
-   <ul> <img src="{{image}}" alt="Avatar" style="width: 25%"> </ul>
+   <ul> <img src="{{image}}" alt="pet image" style="width: 30%"> </ul>
     <div class="container">
-      <h4><b>Name</b></h4>
-      <p>Breed</p>
+      <li><b>{{name}}</b></li>
+      <li><p>{{breed}}</p></li>
     </div>
   </div>
 </template>

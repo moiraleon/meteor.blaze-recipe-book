@@ -32,5 +32,17 @@ Template.body.helpers({
     {image: 'https://dogsized.com/wp-content/uploads/2021/08/Fluffy-Dog-Breeds-Pomeranian-.png'},
     {image: 'https://cdn3.volusion.com/uxmhm.qxgbz/v/vspfiles/photos/RainbowMohawk-1.jpg'},
     {image: 'https://localist-images.azureedge.net/photos/571993/big_square/fc2e3fd514e0a80e1e980de20c5042493e58170e.jpg'}
+  ],
+  names:[
+    {name: 'Bruno'},
+    {name: 'Lanny'},
+    {name: 'Crusty'},
+    {name: 'Stinky'}
+  ],
+  breeds:[
+    {breed: 'cotton ball'},
+    {breed: 'pomeranian'},
+    {breed: 'rainbow dragon'},
+    {breed: 'golden retriever'}
   ]
 });
